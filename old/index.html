@@ -29,8 +29,8 @@
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>    
-                <span class="navbar-text" id="log">
-                    <a >
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
                     <span class="fa fa-sign-in"></span> Login</a>
                 </span>
                 
@@ -90,7 +90,7 @@
                 <div class="col-12 col-sm-6 align-self-center">
                     <img class="col-12 col-sm-3" src="img/logo.png" class="img-fluid">&nbsp;
                     <button type="button" class="btn btn-warning col-12 col-sm-3 manual"
-                    id="reserve" ><a class="manual">Reserve Table</a></button>
+                    data-toggle="modal" data-target="#ReserveModal" ><a class="manual">Reserve Table</a></button>
                 </div>
             </div>
         </div>
@@ -312,24 +312,12 @@
  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<!--<script>
+<script>
     $(document).ready(function(){
         $('.carousel').carousel()
 
     });
 
-</script>-->
-<script>
-$('#reserve').on('click',function(){
-    $('#ReserveModal').modal('show');
-});
-
-</script>
-
-<script>
-    $('#log').on('click',function(){
-        $('#loginModal').modal('show');
-    });
 </script>
 </body>
 
